@@ -1,4 +1,7 @@
 import React from 'react'
+import Arithemetic from './pages/Arithemetic'
+import Buttonpages from './pages/Buttonpages'
+import Loops from './pages/Loops'
 
 export default function App() {
   const divStyle = {   
@@ -19,7 +22,7 @@ export default function App() {
       <br></br>
       <ins>hello</ins>
       <br></br>
-      <img src ="https://www.beanalytic.com/wp-content/uploads/2021/07/BeAnalytic-Logo.jpg" alt ="" width = "500px"/>
+      <img src ="https://www.beanalytic.com/wp-content/uploads/2021/07/BeAnalytic-Logo.jpg" alt ="" width = "150px"/>
 
 	  <br></br>
 	
@@ -28,6 +31,9 @@ export default function App() {
         <h3>Town: Nellore</h3>
         <h3>Phone: 112233</h3>
 		  </div>
+<Arithemetic/>
+<Buttonpages/>
+<Loops/>
 
     </div>
     
