@@ -5,8 +5,8 @@ import React from 'react'
 //import Tablepages from './pages/Tablepages'
 //import Sample from './pages/Sample'
 //import Variables from './pages/Variables'
-import ModalBox from './pages/ModalBox'
-
+//import ModalBox from './pages/ModalBox'
+import Mainmenu from './Myapi/Mainmenu'
 
 
 export default function App() {
@@ -20,8 +20,9 @@ export default function App() {
       <Loops />
       <Tablepages />
       <Sample />
-  <Variables />*/}
-      <ModalBox />
+  <Variables />
+      <ModalBox />*/}
+      <Mainmenu />
 
     </div>
 
