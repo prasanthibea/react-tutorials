@@ -53,6 +53,11 @@ import { Menu } from 'semantic-ui-react'
 import Arithemetic from '../pages/Arithemetic'
 import ModalBox from '../pages/ModalBox'
 import Loadnews from './Loadnews'
+import TodoList from './TodoList'
+import Myprofile from './Myprofile'
+import GetNews from './GetNews'
+import StudentList from '../Props/StudentList'
+import TodoListProps from '../Props/TodoListProps'
 
 export default function Mainmenu() {
   return (
@@ -66,6 +71,11 @@ export default function Mainmenu() {
           <Route path="calc" element={<Arithemetic />} />
           <Route path="modal" element={<ModalBox />} />
           <Route path="loadnews" element={<Loadnews />} />
+          <Route path="tudolist" element={<TodoList />} />
+          <Route path="myprofile" element={<Myprofile />} />
+          <Route path="getnews" element={<GetNews />} />
+          <Route path="students" element={<StudentList />} />
+          <Route path="TodoListProps" element={<TodoListProps />} />
           {/* <Route path="*" element={<NoPage />} /> */}
 
         </Routes>
@@ -82,6 +92,25 @@ function MenuItems() {
           Loadnews
         </Menu.Item>
 
+        <Menu.Item as={Link} to='/tudolist'>
+          Tudolist
+        </Menu.Item>
+
+        <Menu.Item as={Link} to='/myprofile'>
+          Myprofile
+        </Menu.Item>
+
+        <Menu.Item as={Link} to='/getnews'>
+          Myprofile
+        </Menu.Item>
+
+        <Menu.Item as={Link} to='/studentList'>
+          Myprofile
+        </Menu.Item>
+
+        <Menu.Item as={Link} to='/todolistprops'>
+          Myprofile
+        </Menu.Item>
       </Menu>
 
       <Outlet />
