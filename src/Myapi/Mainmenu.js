@@ -45,19 +45,22 @@
 //
 
 import React from 'react'
+import GetNews from './GetNews'
 import { BrowserRouter, Link, Outlet, Route, Routes } from 'react-router-dom'
 //import Homepage from './Homepage'
 //import Aboutpage from './Aboutpage'
-import Books from './Books'
+// import Books from './Books'
 import { Menu } from 'semantic-ui-react'
-import Arithemetic from '../pages/Arithemetic'
-import ModalBox from '../pages/ModalBox'
-import Loadnews from './Loadnews'
-import TodoList from './TodoList'
-import Myprofile from './Myprofile'
-import GetNews from './GetNews'
+// import Arithemetic from '../pages/Arithemetic'
+// import ModalBox from '../pages/ModalBox'
+// import Loadnews from './Loadnews'
+// import TodoList from './TodoList'
+// import Myprofile from './Myprofile'
+// import GetNews from './GetNews'
 import StudentList from '../Props/StudentList'
 import TodoListProps from '../Props/TodoListProps'
+import TodoListEditable from './TodoListEditable'
+import TodoListMultiField from '../Props/TodoListMultiField'
 
 export default function Mainmenu() {
   return (
@@ -67,15 +70,17 @@ export default function Mainmenu() {
           <Route path="/" element={<MenuItems />} />
           {/*<Route index element={<Homepage />} />  */}
           {/*<Route path="about" element={<Aboutpage />} /> */}
-          <Route path="books" element={<Books />} />
+          {/* <Route path="books" element={<Books />} />
           <Route path="calc" element={<Arithemetic />} />
           <Route path="modal" element={<ModalBox />} />
           <Route path="loadnews" element={<Loadnews />} />
           <Route path="tudolist" element={<TodoList />} />
-          <Route path="myprofile" element={<Myprofile />} />
+          <Route path="myprofile" element={<Myprofile />} /> */}
           <Route path="getnews" element={<GetNews />} />
           <Route path="students" element={<StudentList />} />
           <Route path="TodoListProps" element={<TodoListProps />} />
+          <Route path="TodoListEditable" element={<TodoListEditable />} />
+          <Route path="TodoListMultiField" element={<TodoListMultiField />} />
           {/* <Route path="*" element={<NoPage />} /> */}
 
         </Routes>
@@ -88,7 +93,7 @@ function MenuItems() {
   return (
     <>
       <Menu>
-        <Menu.Item as={Link} to='/loadnews'>
+        {/*  <Menu.Item as={Link} to='/loadnews'>
           Loadnews
         </Menu.Item>
 
@@ -106,10 +111,18 @@ function MenuItems() {
 
         <Menu.Item as={Link} to='/studentList'>
           Myprofile
-        </Menu.Item>
+        </Menu.Item> */}
 
         <Menu.Item as={Link} to='/todolistprops'>
           Myprofile
+        </Menu.Item>
+
+        <Menu.Item as={Link} to='/TodoListEditable'>
+          TodoListEditable
+        </Menu.Item>
+
+        <Menu.Item as={Link} to='/TodoListMultiField'>
+          TodoListMultiField
         </Menu.Item>
       </Menu>
 
