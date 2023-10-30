@@ -1,4 +1,6 @@
 import React from 'react'
+import MainMenu from './Myapi/MainMenu'
+
 //import Arithemetic from './pages/Arithemetic'
 //import Buttonpages from './pages/Buttonpages'
 //import Loops from './pages/Loops'
@@ -6,7 +8,8 @@ import React from 'react'
 //import Sample from './pages/Sample'
 //import Variables from './pages/Variables'
 //import ModalBox from './pages/ModalBox'
-import Mainmenu from './Myapi/Mainmenu'
+
+
 
 
 export default function App() {
@@ -22,7 +25,8 @@ export default function App() {
       <Sample />
   <Variables />
       <ModalBox />*/}
-      <Mainmenu />
+
+      <MainMenu />
 
     </div>
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Button, Form, Header, Image, Input, Modal } from 'semantic-ui-react'
+import { Button, Form, Input, Modal } from 'semantic-ui-react'
 
 function ModalExampleModal(p) {
   const [open, setOpen] = React.useState(false)
