@@ -28,6 +28,8 @@ import TodoListProps from '../Props/TodoListProps'
 import TodoListEditable from './TodoListEditable'
 import TodoListMultiField from '../Props/TodoListMultiField'
 import DOM from '../Props/DOM'
+import Nested from '../Advanced/Nested'
+
 
 export default function Mainmenu() {
   return (
@@ -49,6 +51,7 @@ export default function Mainmenu() {
           <Route path="TodoListEditable" element={<TodoListEditable />} />
           <Route path="TodoListMultiField" element={<TodoListMultiField />} />
           <Route path="dom" element={<DOM />} />
+          <Route path="nested" element={<Nested />} />
           {/* <Route path="*" element={<NoPage />} /> */}
 
         </Routes>
@@ -79,7 +82,7 @@ function MenuItems() {
         </Menu.Item>
 
         <Menu.Item as={Link} to='/studentList'>
-          Myprofile
+          StudentList
         </Menu.Item>
 
         <Menu.Item as={Link} to='/todolistprops'>
@@ -99,6 +102,10 @@ function MenuItems() {
         </Menu.Item>
         <Menu.Item as={Link} to='/homepage'>
           Homepage
+        </Menu.Item>
+
+        <Menu.Item as={Link} to='/nested'>
+          Nested
         </Menu.Item>
 
       </Menu>
